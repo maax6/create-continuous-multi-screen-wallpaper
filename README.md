@@ -1,8 +1,8 @@
 # One Image Across Screens
 
-A Codex skill for creating one continuous high-resolution wallpaper across two or three displays, including mixed resolutions, portrait screens, unequal physical sizes, bezels, gaps, and vertical offsets.
+A Codex skill for creating one culturally grounded narrative scene across two or three displays, including mixed resolutions, portrait screens, unequal physical sizes, bezels, gaps, and vertical offsets.
 
-The workflow builds a measured virtual canvas, generates one composition master, checks the source-pixel density available to every crop, and re-renders individual displays when a direct crop would be too soft.
+The workflow gives every screen a distinct narrative beat, requires an interaction and a physical junction between displays, builds a measured virtual canvas, generates one composition master, checks the source-pixel density available to every crop, and re-renders individual displays when a direct crop would be too soft.
 
 
 https://github.com/user-attachments/assets/aca8e260-bdc1-4f7f-8e47-68841f347f00
@@ -29,8 +29,12 @@ $create-continuous-multi-screen-wallpaper
 - Unequal physical display sizes
 - Vertical offsets, bezels, and physical air gaps
 - Icon-safe and widget-safe quiet zones
+- Scene-centered classical, modern, and contemporary art direction
+- A distinct narrative role for every display
+- Cross-screen interaction and a story-bearing physical junction
+- Rejection of abstract, decorative, or merely similar wallpaper concepts
 - Quality analysis before accepting enlarged crops
-- Sequential HD re-rendering with cross-screen anchor contracts
+- Sequential HD re-rendering that preserves narrative and cross-screen anchor contracts
 
 ## Layout helper
 
@@ -81,4 +85,3 @@ python3 scripts/wallpaper_layout.py preview \
 - An image-generation capability available to the agent
 
 See [SKILL.md](SKILL.md) for the full workflow and quality rules.
-

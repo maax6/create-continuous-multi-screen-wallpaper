@@ -1,11 +1,11 @@
 ---
 name: create-continuous-multi-screen-wallpaper
-description: Create culturally grounded, seamless, high-resolution wallpaper sets for two- or three-monitor desks, including portrait screens, mixed resolutions, unequal physical sizes, and vertically offset arrangements. Use when a user wants one continuous scene across dual-screen, triple-screen, panoramic, or multi-monitor displays rather than merely similar images.
+description: Create culturally grounded, narrative, high-resolution wallpaper scenes for two or three monitors, including portrait screens, mixed resolutions, unequal physical sizes, and vertically offset arrangements. Use when a user wants one authored scene whose action, characters, and visual junction continue and interact across dual-screen, triple-screen, panoramic, or multi-monitor displays rather than merely similar images.
 ---
 
 # One Image Across Screens
 
-Build one continuous scene on a measured virtual canvas, then produce one high-quality wallpaper per display. Use the master scene as the composition contract; do not assume that enlarging small crops preserves enough detail. Never originate the screens as unrelated images.
+Build one authored scene on a measured virtual canvas, then produce one high-quality wallpaper per display. Every display must carry a distinct narrative beat, interact with at least one other display, and participate in a visible physical junction across a seam or gap. Use the master scene as the composition contract; do not assume that enlarging small crops preserves enough detail. Never originate the screens as unrelated images or accept mere visual similarity as continuity.
 
 ## 1. Capture the setup
 
@@ -49,33 +49,40 @@ Check screen count, orientation, left-to-right order, vertical offsets, relative
 
 Once geometry is sound, read [references/art-direction.md](references/art-direction.md). Do not offer vague generator-native labels such as `epic fantasy realism`, `painterly concept art`, `high-end 3D render`, or `cinematic AI art`. Guide the user progressively instead of dumping the full catalog:
 
-1. Offer the five culturally grounded families with a short visual distinction and a recommendation based on the setup.
+1. Offer the five scene-centered, culturally grounded families with a short visual distinction and a recommendation based on the setup. Do not offer abstraction, minimalism, color fields, empty atmospheric landscapes, or purely decorative geometric systems as directions.
 2. After the family is chosen, offer only its relevant historical movements, media, or visual traditions, with one or two known works as conceptual or compositional anchors when useful.
 3. Offer a small set of philosophical or literary lenses that materially fit the subject. Do not name-drop a thinker without translating the idea into visible composition.
-4. Ask for the subject or universe, mood/palette, and preferred cross-screen interaction. Combine these into two or three concrete scene concepts.
+4. Ask who or what acts, toward whom or what, and what visibly changes. Then ask for the universe, mood/palette, preferred cross-screen interaction, and physical junction. Combine these into two or three concrete scene concepts.
 5. Let the user pick a concept or choose `surprise me`.
 
 Use tappable options when available and keep each question focused. If the user already specified a theme or style, preserve it and ask only for decisions that materially affect the result.
 
 Every concept must include:
 
+- a one-sentence synopsis containing an active verb, a cause, and a visible consequence;
+- the protagonists, groups, objects, or opposing forces that carry the scene;
+- a beat map assigning every screen a distinct narrative role such as initiator, passage, response, reveal, or consequence;
 - one identifiable artistic lineage, period, medium, or public-domain compositional reference;
 - one philosophical or literary premise expressed through a concrete visual metaphor;
-- one shared background plane or horizon;
-- at least one unmistakable bridge across a seam, such as a beam, road, river, sword, tether, smoke trail, gaze, or cause-and-effect action;
-- a distinct role for every screen rather than duplicated subjects;
+- one unmistakable interaction between screens, such as an exchange, confrontation, pursuit, rescue, dialogue, transformation, or cause-and-effect action;
+- one physical junction integral to that interaction, such as a passed object, outstretched gesture, rope, road, river, train, fabric, shadow, smoke trail, projectile, or architectural structure that exits one display edge and enters the corresponding edge of another;
+- a shared background plane, horizon, lighting field, or spatial system that supports the action without substituting for it;
 - seam-safe focal placement and quiet zones requested by the user.
 
-Apply the anti-generic test from the reference. If removing the named artistic and philosophical anchors would leave essentially the same prompt, the concept is not grounded enough. Do not proceed until the references change the image's composition, material, palette, or symbolism.
+Apply the scene and anti-generic tests from the reference. Reject a concept if its crops would still work unchanged as unrelated standalone wallpapers, if removing one display would leave the same story intact, or if the only connection is a horizon, palette, atmosphere, or recurring motif. If removing the named artistic and philosophical anchors would leave essentially the same prompt, the concept is not grounded enough. Do not proceed until the references change the image's staging, composition, material, palette, or symbolism.
 
 ## 4. Generate one composition master
 
 Use the image-generation capability to create a single master panorama at the virtual canvas aspect ratio. Include `layout-guide.png` as a geometry reference when possible, along with any user-supplied visual references. State that colored rectangles, borders, labels, and guide text must not appear in the artwork.
 
-Describe the full scene spatially using display IDs and seams. Specify the shared horizon, crossing element, direction of action, lighting source, quiet zones, and which focal subject belongs on each screen. Do not merely request "matching wallpapers."
+Describe the full scene spatially using display IDs and seams. Specify the story sentence, cast or forces, beat on every display, interaction, shared world, direction of action, lighting source, quiet zones, and exact physical junction. The junction must exit one named edge and enter the corresponding edge at compatible positions. Do not merely request "matching wallpapers" or a continuous landscape.
 
 Include a compact cultural-direction block in the prompt:
 
+- **Scene synopsis:** who or what acts, toward whom or what, and what visibly changes;
+- **Beat map:** the distinct narrative function and principal action assigned to each display;
+- **Cross-screen interaction:** the action/reaction, exchange, confrontation, pursuit, rescue, dialogue, reveal, or transformation that makes the screens depend on one another;
+- **Physical junction:** the specific object, gesture, path, force, shadow, or structure that crosses each seam, with source and destination edges;
 - **Artistic lineage:** the selected movement, period, or medium and the concrete visual rules borrowed from it;
 - **Philosophical premise:** the idea and the visible tension, metaphor, or staging that expresses it;
 - **Material language:** paper, ink, grain, brushwork, photography, textile, glass, engraving, or another specific surface treatment;
@@ -83,7 +90,7 @@ Include a compact cultural-direction block in the prompt:
 
 Prefer movements, periods, media, and compositional principles over exact imitation of a named artist. Never request a living artist's style. Treat copyrighted works as intellectual references, then translate them into original visual grammar rather than copying a recognizable composition.
 
-Generate the complete rectangular master first. This master proves the scene, placement, lighting, and crossings; it is not automatically the final-resolution source. Do not originate one image per monitor independently. Treat unused canvas gaps as non-display composition space, and keep critical faces, hands, text, or small details away from bezels unless the seam crossing is intentional.
+Generate the complete rectangular master first. This master proves the scene, beat progression, interaction, placement, lighting, and junctions; it is not automatically the final-resolution source. Compose one scene, not a row of self-contained vignettes. Do not originate one image per monitor independently. Treat unused canvas gaps as non-display composition space, and keep critical faces, hands, text, or small details away from bezels unless the seam crossing is intentional and broad enough to survive re-rendering.
 
 ## 5. Measure resolution before accepting crops
 
@@ -97,7 +104,7 @@ python3 scripts/wallpaper_layout.py analyze \
 The report estimates how many source pixels each display crop actually contains and the linear enlargement required to reach its output resolution. Choose the delivery path per display:
 
 - **Detailed, figurative, photographic, or painterly work:** accept a direct crop only when enlargement is at most `1.33x` and visual inspection confirms adequate detail.
-- **Flat, abstract, silhouette, or deliberately soft work:** enlargement up to `2x` may be acceptable after inspection.
+- **Graphic narrative work with large shapes, silhouettes, or deliberately soft material treatment:** enlargement up to `2x` may be acceptable after inspection, but the scene and interaction requirements still apply.
 - **More than `2x`:** never silently deliver the enlarged crop as final. Re-render that display in HD unless the user explicitly accepts a draft-quality result.
 
 Create draft crops for composition references:
@@ -113,9 +120,9 @@ The command emits exact-size draft crops, a fitted master, a manifest with quali
 
 If any detailed crop exceeds `1.33x`, or if inspection shows softness, read [references/high-resolution-rendering.md](references/high-resolution-rendering.md). Use the full master and each draft crop as composition references, then ask the image-generation model to **faithfully re-render that screen with newly resolved detail** at its own aspect ratio. Do not ask for a generic upscale and do not redesign the scene.
 
-Lock every cross-screen element with an anchor contract: source and destination edges, normalized edge positions, apparent width, direction, color, and lighting. Render the screen containing the origin or main subject first. Render connected screens sequentially, supplying the approved neighboring render as an additional reference. Never generate connected HD screens independently or in parallel.
+Lock every cross-screen element with an anchor contract: narrative role, source and destination edges, normalized edge positions, apparent width, direction, color, lighting, and the action it carries. Render the screen containing the initiating action or main subject first. Render connected screens sequentially, supplying the approved neighboring render as an additional reference. Never generate connected HD screens independently or in parallel.
 
-Prefer this hybrid workflow for detailed art even if only one small display lacks density: keep acceptable direct crops, and re-render only insufficient screens. For flat or abstract styles, direct crops remain a valid quality-first choice because they preserve exact geometry.
+Prefer this hybrid workflow for detailed art even if only one small display lacks density: keep acceptable direct crops, and re-render only insufficient screens. For graphic narrative scenes with large, materially simple forms, direct crops remain a valid quality-first choice because they preserve exact geometry.
 
 Assemble the final HD wallpapers into a spatial preview:
 
@@ -132,6 +139,8 @@ If an anchor misses, revise only the receiving screen with the master, its draft
 Inspect the final preview and every full-resolution wallpaper. Verify:
 
 - horizon, large contours, light, and crossing objects continue at the correct height;
+- every display contributes a readable beat, the interaction remains legible, and the junction carries the action across the physical gap;
+- removing any display would make the intended narrative incomplete rather than merely narrower;
 - no focal subject is accidentally cut by a bezel;
 - each output has the requested resolution and orientation;
 - no labels, guide shapes, signatures, or accidental text remain;

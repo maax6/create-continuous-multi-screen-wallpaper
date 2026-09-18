@@ -1,7 +1,7 @@
 interface:
   display_name: "One Image Across Screens"
-  short_description: "One continuous image across 2–3 screens"
-  default_prompt: "Use $create-continuous-multi-screen-wallpaper to create one continuous image across my multi-screen setup."
+  short_description: "One narrative scene interacting across 2–3 screens"
+  default_prompt: "Use $create-continuous-multi-screen-wallpaper to stage one artistic narrative whose action and physical junction continue across my screens."
   icon_small: "assets/icon.svg"
   icon_large: "assets/icon.svg"
 policy:
