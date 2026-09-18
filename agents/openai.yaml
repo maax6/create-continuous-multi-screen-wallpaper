@@ -1,0 +1,13 @@
+interface:
+  display_name: "One Image Across Screens"
+  short_description: "One continuous image across 2–3 screens"
+  default_prompt: "Use $create-continuous-multi-screen-wallpaper to create one continuous image across my multi-screen setup."
+  icon_small: "assets/icon.svg"
+  icon_large: "assets/icon.svg"
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
