@@ -5,7 +5,7 @@ A Codex skill for creating one continuous high-resolution wallpaper across two o
 The workflow builds a measured virtual canvas, generates one composition master, checks the source-pixel density available to every crop, and re-renders individual displays when a direct crop would be too soft.
 
 
-https://github.com/user-attachments/assets/ba749fb8-0c83-4fd4-bf65-3959e9dd99c4
+https://github.com/user-attachments/assets/aca8e260-bdc1-4f7f-8e47-68841f347f00
 
 ## Install
 
