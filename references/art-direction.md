@@ -4,155 +4,371 @@ Use this menu after the display geometry is known. Present one decision level at
 
 ## Non-negotiable scene contract
 
-Before proposing a concept, establish six compatible anchors:
+Before proposing a concept, establish these compatible anchors:
 
-1. **Story sentence** — who or what acts, toward whom or what, and what visibly changes. It must contain an active verb.
-2. **Cast or forces** — the people, groups, creatures, objects, institutions, or natural forces that carry the action.
-3. **Beat map** — one distinct narrative function per display, such as initiator, passage, response, reveal, reversal, or consequence.
-4. **Cross-screen interaction** — an exchange, confrontation, pursuit, rescue, dialogue, transformation, or cause-and-effect relation between displays.
-5. **Physical junction** — an object, gesture, path, force, shadow, or structure that visibly exits one display edge and enters another. It must carry the interaction, not merely decorate the seam.
-6. **Artistic construction** — one dominant artistic lineage, one philosophical or literary premise, and one material grammar.
+1. **Plain-language brief** — the user's own description of what they want to see, even when it is fragmentary or non-technical.
+2. **Reality mode** — observed real, reconstructed or historical, plausibly altered, dreamlike or surreal, fully imaginary or speculative, symbolic or graphic, or another user-defined mode.
+3. **Scene carriers** — the people, characters, animals, creatures, objects, machines, places, architecture, landscape, or natural forces that carry the image.
+4. **Story sentence** — who or what acts, toward whom or what, and what visibly changes. Quiet actions such as waiting, noticing, accompanying, growing, or remembering are valid.
+5. **Beat map** — one distinct narrative function per display, such as introduction, continuation, passage, response, reveal, reversal, or consequence.
+6. **Cross-screen interaction** — an exchange, journey, shared task, pursuit, rescue, dialogue, transformation, observation, cause and effect, or another relationship between displays.
+7. **Physical junction** — an object, gesture, path, force, shadow, structure, or environmental feature that visibly exits one display edge and enters another. It must carry the interaction, not merely decorate the seam.
+8. **Artistic construction** — one dominant artistic lineage, one composition engine, and one material grammar.
 
 A shared horizon, palette, weather system, or recurring motif may unify the scene, but none of these counts as the required interaction or junction. The displays must be narratively interdependent. If removing one display leaves the same story intact, reject the concept.
 
 ## Artistic construction
 
-Every scene needs three compatible cultural anchors:
+Every scene needs three compatible visual anchors:
 
 1. **Artistic lineage** — a historical movement, period, medium, cinematic grammar, contemporary artistic practice, or public-domain compositional reference.
-2. **Philosophical or literary premise** — an idea expressed by a visible relation, contradiction, ritual, scale difference, reversal, absence, or transformation.
-3. **Material grammar** — the image's physical-looking construction: lens and film stock, oil glaze, engraving, halftone, torn paper, textile, stained glass, stage scenery, or another specific surface language.
+2. **Composition engine** — the chosen viewpoint, spatial rhythm, scale, density, tempo, and direction of attention or action.
+3. **Material grammar** — the image's physical-looking construction: lens and film stock, oil glaze, engraving, halftone, torn paper, textile, stained glass, stage scenery, pixel structure, or another specific surface language.
 
-Do not stack references arbitrarily. Use one dominant lineage, at most one supporting lineage, and one premise. Translate every reference into staging, viewpoint, gesture, palette, form, or material decisions.
+An optional narrative, literary, philosophical, humorous, or satirical lens may add meaning, but it is not mandatory. Do not stack references arbitrarily. Use one dominant lineage and at most one supporting lineage with a precise job. Translate every reference into staging, viewpoint, gesture, palette, form, or material decisions.
 
 When a known work is used, treat it as a conceptual or compositional anchor rather than an image to copy. Prefer public-domain works and museum-held historical references. Contemporary and living artistic practices may inform the type of staging, medium, or critical strategy, but never request exact imitation of a living artist's style.
 
-## Excluded directions and generic shortcuts
+## The art-direction funnel
 
-Do not offer these as directions:
+The user should feel guided from an ordinary verbal idea toward one precise, coherent image. Use this sequence:
 
-- abstraction, geometric abstraction, Op Art, color fields, or purely formal pattern systems;
-- minimalism whose subject is only color, atmosphere, emptiness, or shape;
-- an empty landscape, skyline, horizon, or architecture without a staged event;
-- separate portraits or vignettes connected only by palette, lighting, or recurring motifs;
-- epic fantasy realism, painterly concept art, generic anime key visual, high-end 3D render, or cinematic AI art;
+`plain-language description -> visual reference (optional) -> degree of reality -> scene carriers -> scene mode and register -> scale, rhythm, and density -> 4-6 visual territories -> 4-6 lineages -> 3 interpretations -> optional lens -> 2-3 cross-screen structures -> 2-3 complete scenes -> 1 locked direction`
+
+Ask one decision at a time. At every gate:
+
+- explain what the choice changes in the visible image;
+- make one recommendation based on the story and screen geometry;
+- recap the choices already locked;
+- stop presenting rejected branches unless the user asks to reopen them;
+- infer and skip any gate already answered in ordinary language;
+- allow `surprise me` without skipping the reasoning needed to build a coherent result.
+
+The funnel is adaptive, not a compulsory form. Do not ask the user to restate information, select an art-history term, or invent a message they do not want.
+
+### Gate 0: plain-language image description
+
+Begin with a neutral invitation: ask the user to describe the image they imagine in their own words. They may mention any combination of subject, location, era, characters, objects, action, colors, atmosphere, or visual references. Fragments such as `a whale above a night train`, `a quiet medieval market`, or `something funny about office life` are enough.
+
+Do not open with tension, conflict, philosophy, symbolism, or emotion. Those are possibilities, not defaults.
+
+### Gate 1: visual-identity reference
+
+Offer an image upload after the free description. If the user supplies one, extract observable visual grammar: palette, contrast, light, spatial density, edge quality, texture, material, image-making process, and the relation between figures and background. Ask what to preserve only if ambiguous. If the user declines, continue immediately.
+
+### Gate 2: degree of reality
+
+Ask only if the user's description does not already establish it. Offer:
+
+- observed real;
+- reconstructed or historical;
+- plausible reality with one altered rule;
+- dreamlike or surreal;
+- fully imaginary or speculative;
+- symbolic or graphic;
+- no preference.
+
+The choice controls how literally bodies, space, materials, and causality behave. It does not choose a medium or movement yet.
+
+### Gate 3: scene carriers
+
+Clarify what is visibly present only when needed:
+
+- one or more people or characters;
+- animals or creatures;
+- machines or significant objects;
+- architecture or a place;
+- landscape, weather, water, plants, or another natural force;
+- a mixture;
+- no preference.
+
+Then ask what they are doing or how they relate, using ordinary verbs. A landscape or object may act as a force, but every screen still needs a readable role in the same event.
+
+### Gate 4: scene mode and register
+
+Offer only four to six options relevant to the description, selected from the choice bank below. Possible modes include observation, encounter, journey, shared work, ritual, discovery, reveal, transformation, pursuit, confrontation, rescue, conversation, contemplation, play, celebration, humor, absurdity, and satire. Satire must be available when compatible, but never presumed.
+
+The register may be calm, joyful, tender, intimate, melancholy, mysterious, uncanny, adventurous, wondrous, documentary, humorous, absurd, satirical, dramatic, tragic, celebratory, or user-defined. Do not force an emotional adjective if the user does not want one.
+
+### Gate 5: scale, rhythm, and density
+
+Ask only for unresolved properties that materially affect composition:
+
+- **Scale:** intimate subject, small group, ensemble, or monumental world;
+- **Rhythm:** still, slow, flowing, episodic, or kinetic;
+- **Density:** sparse, balanced, layered, or abundant.
+
+Keep this compact. These are visual controls, not themes.
+
+### Gate 6: contrasting visual territories
+
+Select four to six territories from the atlas below. Do not reuse a fixed menu. The shortlist should differ meaningfully in period, geography, medium, spatial construction, and energy. Include one unexpected but defensible route. Each option needs:
+
+- a plain-language label;
+- one or two named lineages or practices as evidence;
+- the visible staging and material consequences;
+- why it fits, or productively challenges, the accumulated brief and monitor arrangement.
+
+### Gate 7: lineages within the chosen territory
+
+Offer four to six specific lineages, movements, or traditions from the selected territory. Avoid giving six near-synonyms from one country or century. Explain the rules borrowed from each: viewpoint, scale, gesture, rhythm, palette, surface, and treatment of time. Use one or two known works only as conceptual or compositional anchors when helpful.
+
+### Gate 8: interpretations within the chosen lineage
+
+Narrow to three interpretations of the selected lineage. Keep the lineage stable while varying composition engine, material grammar, tempo, viewpoint, palette, or lighting. Lock one dominant lineage. Add at most one supporting lineage, and only when its job can be stated precisely. Variety belongs in the funnel; coherence belongs in the final image.
+
+### Gate 9: optional lens
+
+Offer `no added lens` plus two or three relevant options only when a lens would enrich the chosen scene. Lenses may be narrative, literary, philosophical, humorous, satirical, mythic, or poetic. Translate each into a visible event or relation rather than a named concept.
+
+### Gate 10: cross-screen structure
+
+Propose two or three concrete distributions of the chosen subject across the measured screens. Each must assign a distinct beat to every screen, include an interaction, and name a broad physical junction. Do not make the user invent seam geometry from scratch.
+
+### Gate 11: complete scene concepts
+
+Combine all locked choices into two or three complete scenes. Run the scene, removal, and anti-generic tests before presenting them. Let the user choose one or request `surprise me`.
+
+## Neutral choice banks
+
+Use these banks to create short, relevant options. Never dump them verbatim.
+
+### Scene modes
+
+- **Presence or observation:** waiting, watching, resting, listening, noticing, inhabiting.
+- **Relation or encounter:** meeting, accompanying, exchanging, teaching, greeting, separating.
+- **Movement or journey:** walking, sailing, flying, migrating, transporting, pursuing, returning.
+- **Making or shared activity:** building, repairing, cooking, cultivating, performing, studying, organizing.
+- **Discovery or reveal:** opening, uncovering, arriving, recognizing, exposing, remembering.
+- **Transformation:** growing, dissolving, assembling, aging, changing form, changing scale.
+- **Danger, conflict, or rescue:** confronting, escaping, defending, reaching, pulling, sheltering.
+- **Play or celebration:** dancing, competing, improvising, feasting, parading, inventing.
+- **Humor, absurdity, or satire:** exaggerating a behavior, reversing roles, exposing a system, staging a futile ritual, showing a gap between image and reality.
+- **Contemplation:** sharing silence, observing a force, tending a place, following a slow natural cycle.
+
+### Registers
+
+- calm, lucid, tender, intimate, joyful, playful;
+- adventurous, wondrous, celebratory, monumental;
+- documentary, observational, analytical;
+- mysterious, dreamlike, uncanny, melancholic;
+- humorous, absurd, satirical, irreverent;
+- dramatic, threatening, tragic;
+- another register described by the user, including no named mood.
+
+### Composition controls
+
+- **Scale:** intimate, small group, ensemble, monumental.
+- **Rhythm:** still, slow, flowing, episodic, kinetic.
+- **Density:** sparse, balanced, layered, abundant.
+- **Viewpoint:** eye level, elevated, bird's-eye, cutaway, stage frontal, deep perspective, flattened or stacked space.
+- **Light:** daylight, overcast, practical interior light, moonlight, theatrical spotlight, luminous material, graphic flat color, user-defined.
+
+## Diversity and cultural-grounding rules
+
+- Vary the initial shortlist across at least four axes: time period, geography, medium, relation to reality, and energy.
+- Do not treat Western nineteenth-century painting as the neutral default.
+- Include vernacular, popular, craft, photographic, performative, and digital image cultures when they genuinely fit.
+- Do not tokenize a tradition merely to make the list look global. Name its region, period, and working method accurately, then explain how those rules alter the scene.
+- Keep distinct traditions distinct. Do not casually merge sacred, ceremonial, or culturally specific motifs into decorative fantasy.
+- If a culturally specific tradition is central and its use is uncertain, verify the terminology or ask the user rather than inventing details.
+- Do not offer the same visual idea repeatedly under new labels.
+- Prefer a small cast with clear relations over ornamental abundance. Use supplied references for composition or material when available.
+
+## Visual-territory atlas
+
+This atlas is a pool for generating a shortlist, not a menu to dump on the user. Select only routes that can stage a concrete event across the measured screens.
+
+### Intimate, domestic, and relational scenes
+
+- **Domestic genre painting** — ordinary rooms, shared tasks, glances, thresholds, and small changes made visually meaningful.
+- **Quiet photographic observation** — natural posture, available light, lived-in objects, and a moment discovered rather than announced.
+- **Chamber-theater staging** — a small cast, one room, precise entrances, props, and gestures that continue across the displays.
+- **Picture-book narrative** — clear relationships, readable actions, controlled detail, and warmth without childish simplification.
+- **Memory tableau** — repeated objects, traces, reflections, and temporal overlap used to connect present and absent figures.
+- **Everyday magical realism** — one impossible event accepted inside ordinary material life.
+
+### Nature, ecology, and cosmic scale
+
+- **Natural-history illustration** — precise species, habitats, cycles, and interactions organized into one living system.
+- **Ukiyo-e weather drama** — wind, rain, wave, snow, or cloud acting visibly upon people, animals, or structures.
+- **Scientific expedition image** — observers, instruments, terrain, and discovery sharing a continuous route.
+- **Ecological mural** — many organisms and human activities linked through food, water, shelter, migration, or repair.
+- **Astronomical engraving and observatory imagery** — instruments, observers, orbital structures, and scale translated into legible action.
+- **Land-art documentation and environmental performance** — bodies changing, tracing, tending, or revealing a place through a concrete act.
+- **Mythic landscape as active force** — land, sea, forest, or sky acts on characters without becoming an empty scenic backdrop.
+
+### Play, comedy, absurdity, and satire
+
+- **Comic genre scene** — many small misunderstandings or reversals organized around one readable event.
+- **Carnival and world-turned-upside-down imagery** — roles, scales, or hierarchies reverse through visible action.
+- **Honoré Daumier-like social lithographic logic** — economical gesture, recognizable roles, and institutional absurdity without copying a specific work.
+- **Dada absurdist staging** — ordinary figures, machines, and documents collide under one precise irrational rule.
+- **Editorial allegory** — an idea or institution becomes a concrete actor, object, machine, queue, feast, game, or ritual.
+- **Deadpan staged photography** — credible people perform an impossible but meticulously ordinary procedure.
+- **Pop and advertising reversal** — polished display language is contradicted by the labor, waste, or behavior revealed on another screen.
+- **Punk-zine satire** — photocopy texture, torn hierarchy, aggressive cropping, and a direct visual joke or accusation.
+
+### Witnessed and staged realities
+
+- **Documentary humanism** — ordinary gestures, social context, available light, and a decisive interaction.
+- **Italian neorealism** — lived-in locations, non-glamorous bodies, collective hardship, and moral consequence.
+- **French New Wave encounter** — off-center blocking, interrupted dialogue, streets as active space, and action continuing beyond the frame.
+- **Film noir and expressionist cinema** — hard shadow geometry, compressed architecture, watcher and watched, and morally loaded objects.
+- **New Objectivity** — cool observation, social types, sharp surfaces, and institutional unease.
+- **Staged absurdist photography** — credible bodies and props arranged around one impossible social ritual.
+- **Practical-effects theatrical photography** — visible sets, miniatures, cloth, smoke, and motivated light rather than frictionless digital spectacle.
+
+### Monumental, civic, and collective drama
+
+- **Baroque theatrical composition** — diagonal action, concentrated light, bodies turning toward one irreversible event.
+- **Romantic history painting** — human action colliding with political or natural force, with consequence rather than empty sublimity.
+- **Mexican muralism** — public-scale labor, social conflict, collective gesture, and architecture carrying the argument.
+- **Social realism** — work, class, infrastructure, and visible relations between producer, system, and beneficiary.
+- **Narrative frieze and relief** — continuous action advancing across architectural divisions.
+- **Processional and festival imagery** — banners, carried structures, crowds, and shared movement suited to physical seams.
+
+### Scrolls, miniatures, manuscripts, and sequential worlds
+
+- **Japanese emakimono** — time unfolding through a continuous lateral journey with recurring figures and shifting viewpoints.
+- **Ukiyo-e narrative moment** — cropped action, rhythmic contour, weather as force, and asymmetrical spatial tension.
+- **Chinese narrative handscroll** — multiple episodes sharing one traversable world, with scale and viewpoint changing along the route.
+- **Persian miniature** — stacked space, saturated pattern, simultaneous action, and architecture opened to view.
+- **Mughal narrative painting** — courtly or public events organized through precise gesture, costume, and clustered attention.
+- **Illuminated manuscript cycles** — symbolic scale, borders, emblems, and actions that migrate across divisions.
+- **Continuous comic tableau** — readable silhouettes and causal sequence without boxed panels or isolated splash images.
+
+### Graphic revolt, mass print, and popular image
+
+- **Dada photomontage** — cut figures, machines, institutions, and purposeful scale collisions.
+- **Constructivist poster and photomontage** — strong diagonals, industrial rhythm, limited color, and directed collective movement.
+- **Polish poster school** — metaphorical compression, hand-made lettering logic without required text, rough paint, and psychological wit.
+- **Pop Art narrative** — mass-media surfaces, repetition, commodity imagery, and staged consumption or spectacle.
+- **Punk and DIY zine collage** — torn edges, photocopy contrast, urgency, and antagonistic sequencing.
+- **Brazilian cordel woodcut** — bold relief marks, popular narrative, emblematic figures, and immediate action.
+- **Newspaper satire and caricature** — economical gesture, legible social roles, and visual argument.
+- **Risograph and screenprint storytelling** — limited inks, misregistration, large forms, and robust resampling.
+
+### Dream, symbol, and the uncanny
+
+- **Symbolism** — staged figures and recurring objects enact psychological or spiritual transformation.
+- **Surrealism** — one explicit impossible rule reorganizes an otherwise coherent world.
+- **Metaphysical painting** — still architecture, displaced objects, long shadows, and an event charged by absence.
+- **Magic-realist tableau** — ordinary social life accepts one impossible event without breaking its material reality.
+- **Visionary folk narrative** — dense symbolic actors, local cosmology, and materially specific mark-making.
+- **Psychedelic poster narrative** — elastic contour and optical intensity used to transmit an action, not merely decorate.
+- **Shadow-theater logic** — silhouettes, scale shifts, and metamorphosis produced by light and articulated forms.
+
+### Material story, craft, and constructed worlds
+
+- **Tapestry and embroidery cycle** — woven terrain, repeated figures, symbolic scale, and a journey crossing divisions.
+- **Narrative quilting and appliqué** — modular cloth, memory, community, and objects passed between panels without becoming separate vignettes.
+- **Stained glass and mosaic** — luminous boundaries, segmented color, and transformation carried through material joints.
+- **Cut-paper theater and kirie** — layered depth, articulated silhouettes, and seam-safe gestures.
+- **Wayang kulit and related shadow-puppet staging** — profile figures, ritualized gesture, negative space, and a single active light field; use with cultural specificity.
+- **Linocut and woodcut chronicle** — directional marks, high contrast, processions, labor, catastrophe, or ritual.
+- **Clay or stop-motion tableau** — fingerprints, practical scale, staged objects, and physical cause and effect.
+- **Miniature diorama** — model architecture, selective focus, visible construction, and an event spanning rooms or terrains.
+
+### Motion, fragmentation, and changing viewpoints
+
+- **Futurist motion studies** — repeated contours, force lines, and bodies or machines shown across successive moments.
+- **Cubist narrative space** — multiple viewpoints used to reveal cause and consequence, not dissolve the subject.
+- **Soviet montage logic** — collision of shots translated into spatially adjacent actions and reactions.
+- **Chronophotography** — phases of one movement distributed across screens while preserving a single actor and trajectory.
+- **Expressionist gesture** — distorted bodies, compressed space, and emotion driving architectural form.
+- **Glitch and databent collage** — rupture, duplication, and signal damage made into a visible transformation with a clear source.
+- **Kinetic comics grammar** — speed, impact, and directional rhythm without generic superhero iconography.
+
+### Speculative, technological, and vernacular futures
+
+- **Afrofuturist tableau** — future-making grounded in Black histories, material cultures, music, technology, and social agency rather than generic neon science fiction.
+- **Solarpunk civic scene** — cooperative infrastructure, repair, cultivation, and visible labor rather than an empty eco-city.
+- **Retrofuturist technical illustration** — cutaways, diagrams, optimistic machinery, and human operators whose action has consequences.
+- **Space-Age poster and exhibition design** — bold geometry, public spectacle, and staged technological promise.
+- **Cassette-futurist scenography** — tactile switches, printed labels, bulky machines, and analog operations across a constructed set.
+- **Biopunk anatomical engraving** — biological systems rendered as precise material structures undergoing a controlled or escaped transformation.
+- **Early-web and pixel narrative** — low-resolution sprites, interface fragments, tiled worlds, and deliberate digital limits.
+- **Speculative theatrical scenography** — costumes, practical mechanisms, and inhabited sets built from one historically coherent design lineage.
+
+### Architecture, systems, and institutional allegory
+
+- **Bauhaus stage experiments** — bodies, costume, geometry, and choreographed machinery acting as one system.
+- **Constructivist scenography** — platforms, ramps, cranes, and collective movement organized through functional structure.
+- **Brutalist editorial image** — heavy mass, institutional scale, severe light, and small human action under pressure.
+- **Metabolist megastructure** — modular growth, circulation, and inhabited systems whose expansion becomes the event.
+- **Industrial cutaway and exploded view** — operators, mechanisms, inputs, and consequences shown in one legible system.
+- **World's-fair spectacle** — public optimism, display machinery, backstage labor, and the gap between promise and cost.
+- **Bureaucratic diagram collage** — documents, conveyors, rooms, and people joined by a visible administrative process.
+
+## Anchor selection
+
+Choose anchors only after the user selects a lineage. Use them to explain a compositional rule, never as an image to copy. Useful public-domain or historical anchors include:
+
+- **Trajan's Column and narrative friezes** for continuous action across divisions;
+- **the Bayeux Tapestry** for procession, repeated figures, and woven sequence;
+- **Japanese emakimono such as _Chōjū-jinbutsu-giga_** for lateral time and recurring actors;
+- **_Along the River During the Qingming Festival_** for many linked actions in one traversable world;
+- **Persian _Shahnameh_ manuscripts and the _Hamzanama_ tradition** for stacked space and simultaneous episodes;
+- **Katsushika Hokusai's _The Great Wave off Kanagawa_** for one dominant force acting on fragile craft through rhythmic contour;
+- **Francisco de Goya's prints and confrontation scenes** for light, opposing groups, reversal, and irreversible consequence;
+- **Pieter Bruegel the Elder's social panoramas** for collective labor and systems exposed through many small actions;
+- **Honoré Daumier's lithographic satire** for social types, economical gesture, and institutional absurdity;
+- **early Dada and Constructivist photomontage** for scale collision, typography-like mass, and political machinery;
+- **Brazilian cordel printing** for popular narrative, emblematic figures, and robust relief texture;
+- **historical shadow-puppet, stained-glass, mosaic, and textile cycles** when their material logic is the chosen lineage.
+
+## Non-narrative and generic shortcuts
+
+Reject or rewrite a direction when it relies on:
+
+- a style name without visible staging rules;
+- four options that are effectively the same movement, medium, region, or century;
+- a random blend of prestigious references with no hierarchy;
+- abstraction, minimalism, pattern, or atmosphere as a substitute for the event;
+- an empty landscape, skyline, or architecture without actors and consequence;
+- separate portraits or vignettes connected only by palette, lighting, or motifs;
+- `epic fantasy realism`, `painterly concept art`, `generic anime key visual`, `high-end 3D render`, or `cinematic AI art`;
 - science-fiction realism without a design lineage and an actual scene;
-- magical portals, hooded heroes, monumental castles, or glowing runes as automatic fantasy defaults;
-- cyan-and-orange or cyan-on-black grading without a conceptual reason;
-- volumetric fog, sparks, floating particles, glossy armor, and excessive micro-detail used only to simulate production value.
+- portals, hooded heroes, monumental castles, glowing runes, cyan-and-orange grading, fog, particles, or micro-detail used as automatic spectacle.
 
-These visual devices may appear only when requested and when they perform a precise narrative function. A fantasy subject is valid; generic game-store key art is not. Negative space may support legibility, but it may not replace the event.
+Abstract, minimalist, optical, or geometric movements may contribute a supporting spatial or motion grammar only when concrete actors, action, consequence, and junction remain legible. Correct one visual property at a time in later edits.
 
-## Preferred generation modes
+## Optional narrative and conceptual lenses
 
-Favor scene-making traditions where a multimodal image model can follow explicit subjects, actions, spatial anchors, and material rules:
+Always permit **no added lens**. When a lens would help, offer only two or three that fit the scene and translate each into something visible:
 
-- documentary, noir, theatrical, or staged photography with a specific lens, light source, blocking, and decisive moment;
-- narrative painting or illustration with legible gestures, groups, props, and cause-and-effect staging;
-- editorial illustration built around one readable social metaphor enacted by characters or objects;
-- printmaking, photomontage, tapestry, mosaic, stained glass, and cut-paper theater with large readable actions;
-- surreal narrative scenes governed by one explicit impossible rule inside an otherwise coherent world;
-- historically grounded fantasy or science fiction whose architecture, costume, action, and medium follow one chosen lineage.
+- **Companionship** — separated figures coordinate, wait for, guide, or carry something for one another.
+- **Wonder and discovery** — an action reveals a scale, creature, mechanism, place, or phenomenon that changes how another screen is read.
+- **Play** — rules, imitation, competition, invention, or shared delight drive the action.
+- **Care and repair** — one screen identifies damage while another tends, rebuilds, protects, or restores it.
+- **Journey and return** — departure, passage, obstacle, recognition, and arrival are distributed across the screens.
+- **Impermanence and memory** — an action erases, repairs, carries, or recovers a trace.
+- **Metamorphosis** — a person, creature, object, landscape, or material changes as it crosses a seam.
+- **Cyclical time** — growth, migration, weather, work, or ritual returns in visibly altered form.
+- **The sublime** — people respond visibly to an overwhelming natural, cosmic, political, or technological force.
+- **Absurdism** — a precise futile ritual continues while another screen reveals its consequence.
+- **Satire** — behavior, hierarchy, technology, consumption, bureaucracy, or status is exaggerated or reversed until its contradiction becomes visible.
+- **Alienation** — maker, action, product, and beneficiary are separated but joined by what crosses the screens.
+- **The spectacle** — performers manufacture an image while others react to the representation instead of the world.
+- **Utopia revealing its cost** — apparent order or abundance depends on labor, exclusion, damage, or concealment revealed elsewhere.
+- **Promethean hubris** — a maker releases a force whose consequence escapes into the neighboring display.
 
-Prefer a small cast with clear relations over ornamental abundance. Use supplied reference images for composition or material when available. Correct one visual property at a time in later edits.
-
-## Canonical reference anchors
-
-Offer only anchors relevant to the chosen story:
-
-- **Théodore Géricault, _The Raft of the Medusa_** — a rising chain of gestures turns collective distress into directed action; borrow the group dynamics and diagonal escalation, not the exact composition.
-- **Eugène Delacroix, _Liberty Leading the People_** — different social figures converge in one forward movement; use the procession and shared destination without reproducing the central figure.
-- **Francisco de Goya, _The Third of May 1808_** — confrontation is organized through opposing groups, light, and irreversible consequence.
-- **Francisco de Goya, _The Sleep of Reason Produces Monsters_** — rational order produces its own nightmare; stage the reversal as action and consequence.
-- **Pieter Bruegel the Elder, _The Tower of Babel_** — many workers enact collective ambition while the structure exposes administrative hubris.
-- **Katsushika Hokusai, _The Great Wave off Kanagawa_** — one dominant force acts upon fragile human craft through rhythmic contour and cropped viewpoint.
-- **Honoré Daumier's lithographic satire** — social types collide through economical gesture, institutional absurdity, and print texture.
-- **Hieronymus Bosch's triptychs** — actions accumulate from cause to consequence across separate zones; use only when the density remains narratively legible.
-- **Trajan's Column and narrative friezes** — continuous action advances across architectural divisions while figures and gestures preserve sequence.
-- **Medieval tapestries and illuminated narrative cycles** — repeated figures, symbolic scale, and material rhythm can connect successive beats without becoming isolated panels.
-
-Do not make the user choose from this list unless the works genuinely fit. Explain in one sentence what staging principle each proposed anchor contributes.
-
-## Five scene-centered families
-
-### 1. Authored photography and cinema
-
-- **Documentary or social observation** — ordinary gestures, regional specificity, available light, and an interaction caught at a decisive moment.
-- **Film noir or expressionist confrontation** — hard shadow geometry, moral ambiguity, compressed urban space, watcher and watched.
-- **French New Wave encounter** — off-center blocking, lived-in streets, interrupted dialogue, visual ellipsis, and action continuing outside the frame.
-- **Staged absurdist tableau** — credible photography arranged around one impossible social ritual whose cause and response occupy different screens.
-- **Theatrical cinematic still** — deliberate blocking, practical scenery, motivated light, and a gesture answered across the set.
-
-Recommend this family for contemporary subjects, satire, cities, or emotional realism. Name the photographic or cinematic grammar rather than saying only `cinematic`.
-
-### 2. Narrative painting from classical to modern
-
-- **History painting and grand tableau** — groups, gestures, diagonals, and hierarchy organize a public event across the canvas.
-- **Romantic drama** — human action confronted by an overwhelming natural or political force; never an empty sublime landscape.
-- **Symbolist allegory** — recurring props and staged figures enact a moral, psychological, or spiritual transformation.
-- **Expressionism or social realism** — compressed perspective, emotional distortion, labor, conflict, and visible social structure.
-- **Ukiyo-e narrative moment** — cropped action, rhythmic contour, weather as a force, and figures reacting across spatial zones.
-
-Recommend this family when the user wants an image that feels authored and historically legible. Translate the movement into composition and action; do not request a copy of a protected artwork.
-
-### 3. Narrative illustration, comics, and editorial image
-
-- **European graphic-novel tableau** — architectural world-building, readable silhouettes, sequential causality, and one continuous scene rather than boxed panels.
-- **Mid-century narrative illustration** — simplified shapes, controlled palette, expressive gesture, and strong spatial storytelling.
-- **Editorial social allegory** — institutions or ideas become concrete actors in one readable metaphor with an initiator and consequence.
-- **Newspaper caricature and satirical print** — recognizable social roles, economical exaggeration, and a visual argument carried by action.
-- **Engraved or woodcut chronicle** — directional marks, processions, labor, catastrophe, or ritual unfolding across the screens.
-
-Recommend this family for political, philosophical, or satirical subjects where the interaction must read immediately at desktop scale.
-
-### 4. Contemporary tableau, installation, and performance
-
-- **Staged conceptual photography** — actors, props, and architecture make an idea visible through a precise encounter or contradiction.
-- **Installation as inhabited scene** — bodies activate objects and space; one display shows the apparatus, another its human or social effect.
-- **Performance tableau** — repeated gesture, endurance, exchange, or obstruction creates a readable relation across the physical gap.
-- **Contemporary theatrical scenography** — constructed rooms, practical mechanisms, costume, and choreographed entrances create a distributed stage.
-- **Contemporary social allegory** — familiar systems are restaged as rituals whose beneficiaries, operators, and costs occupy different screens.
-
-Use contemporary practices as conceptual strategies, not as invitations to imitate a living artist. State the staging method, material, camera, and social relation explicitly.
-
-### 5. Narrative collage, printmaking, and craft
-
-- **Dada or political photomontage scene** — cut figures and institutions collide through purposeful scale changes and a directed action.
-- **Linocut, woodcut, or risograph narrative** — large silhouettes, limited inks, directional marks, and a procession or confrontation that survives resampling.
-- **Tapestry or embroidery cycle** — figures, animals, emblems, and landscape participate in one continuous episode across woven divisions.
-- **Cut-paper theater** — layered scenery and articulated figures stage a readable exchange through large seam-safe shapes.
-- **Mosaic or stained-glass story** — luminous material boundaries organize a dramatic event without reducing it to decorative pattern.
-
-Recommend this family when source resolution is constrained: deliberate texture and large narrative silhouettes survive resampling better than synthetic micro-detail.
-
-## Philosophical and literary lenses
-
-Offer only two or three that fit the subject. Translate each into a visible event:
-
-- **The sublime** — people act under an overwhelming system or force, and their response is visible on another screen.
-- **Absurdism** — one group repeats a precise futile ritual while another receives or reveals its consequence.
-- **Existential choice** — a figure commits to a threshold or fork and another figure, place, or future answers that decision.
-- **Alienation** — labor, product, and beneficiary are visibly separated but joined by the object being transferred.
-- **Panopticism and discipline** — watcher, apparatus, and self-policing response occupy distinct spatial roles.
-- **The spectacle** — performers manufacture an image while a crowd on another screen reacts to the representation rather than the world.
-- **Simulacra** — a copy is produced, passed onward, and displaces or transforms the absent original.
-- **Impermanence and memory** — an action erases, repairs, carries, or recovers a trace across the screens.
-- **Utopia revealing dystopia** — one screen stages perfect order while another exposes the labor, exclusion, or damage that sustains it.
-- **Promethean hubris** — a maker releases a power whose visible consequence escapes into the neighboring display.
-
-Do not place philosophy in the prompt as a decorative proper noun. State how it changes the cast, action, scale, staging, viewpoint, or cause and effect.
+Do not place a concept in the prompt as a decorative proper noun. State how it changes the cast, action, scale, staging, viewpoint, or cause and effect.
 
 ## Reliable pairings
 
 Use these as patterns, not fixed recipes:
 
-- Bureaucratic dystopia: social-realist tableau + absurdism or panopticism + satirical print; clerks feed a machine whose human consequence appears on the next screen.
-- Consumer satire: staged photography or editorial allegory + spectacle or simulacra; performers manufacture desire while consumers answer it.
-- Fantasy: history painting or illuminated narrative + Promethean hubris; a gift, spell, creature, or force crosses the seam and escapes its maker.
-- Science fiction: theatrical scenography + cosmic sublime; operators trigger a mechanism whose transformation reaches another habitat.
-- Nature: ukiyo-e narrative rhythm + impermanence; weather, water, animals, or people act upon one another across the displays.
-- Urban melancholy: expressionist cinema + alienation; separated characters exchange an object, gaze, or missed signal across architecture.
-- Dream or memory: Symbolist tableau + palimpsest; one figure alters a trace that another discovers or loses.
+- Quiet relationship: domestic genre scene + companionship; one figure prepares, carries, or leaves something that another receives.
+- Nature and discovery: natural-history illustration or ukiyo-e weather rhythm + wonder; an animal, current, storm, or seasonal change passes through every screen.
+- Playful world: picture-book staging or cut-paper theater + play; characters invent a shared structure, game, or procession across the layout.
+- Adventure: sequential scroll or continuous comic tableau + journey; departure, passage, obstacle, and arrival each occupy a distinct screen.
+- Satire: staged photography, lithographic caricature, photomontage, or editorial allegory + absurdity or spectacle; one screen performs a system and another reveals its result.
+- Fantasy: illuminated narrative, tapestry, miniature, or theatrical scenography + metamorphosis; a creature, gift, spell, or material changes across the seam.
+- Science fiction: practical-effects scenography, technical illustration, or speculative mural + discovery or hubris; operators trigger a mechanism whose effect reaches another habitat.
+- Memory: Symbolist tableau, embroidery, or layered photography + impermanence; one figure alters a trace that another finds, carries, or loses.
+- Celebration: festival imagery, mural, textile cycle, or risograph + shared activity; participants on every screen contribute to one carried structure, dance, meal, or ritual.
 
 ## Cross-screen interaction patterns
 
@@ -164,11 +380,13 @@ Fit the interaction to both geometry and premise. Every pattern requires a concr
 - **Action and reaction:** one screen initiates an event and another contains its physical or emotional consequence; the transmitted force remains visible.
 - **Rescue or obstruction:** one subject reaches, pulls, blocks, supports, or frees another through a broad gesture or tool crossing the seam.
 - **Dialogue or gaze:** speakers or observers answer one another; a table, window, stage line, shared prop, or broad sightline makes the relation spatially concrete.
+- **Shared presence or observation:** figures, creatures, or instruments attend to the same event from different positions; a shoreline, telescope axis, branch, table, light beam, or broad shadow makes their attention one spatial act.
 - **Reveal:** one screen shows the apparent order and another its mechanism, memory, or cost; a curtain, wall section, conveyor, cable, document trail, or opening joins them.
 - **Transformation:** matter, light, costume, architecture, or identity changes as it passes through a device or threshold located at the seam.
 - **Shared labor or procession:** participants on each screen perform different parts of one task or movement; the carried load, tool, road, fabric, or structure links them.
+- **Play or celebration:** participants invent, throw, carry, dance around, or assemble one shared object or route that crosses the screens.
 
-For three screens, prefer initiator, passage or reversal, and consequence. The middle screen must do narrative work rather than merely fill space.
+For three screens, use a structure appropriate to the chosen mode: initiator, passage, and consequence for causal action; departure, journey, and arrival for travel; presence, continuation, and response for quiet observation; setup, reversal, and punchline or reveal for humor and satire. The middle screen must do narrative work rather than merely fill space.
 
 ## Junction contract
 
@@ -188,13 +406,18 @@ Prefer broad robust carriers such as a road, river, train, drapery, rope, archit
 Build the art block in this order:
 
 ```text
+Plain-language brief: <the user's own words, preserved without adding an unrequested theme>
+Reality mode: <observed real, reconstructed, altered, dreamlike, imaginary, speculative, symbolic, or user-defined>
+Scene carriers: <people, characters, creatures, objects, machines, places, architecture, landscape, or forces>
+Scene mode and register: <observation, encounter, journey, work, ritual, discovery, transformation, play, satire, etc.; plus any chosen mood>
 Story sentence: <who or what acts, toward whom or what, and what visibly changes>
 Cast or forces: <subjects and their relations>
 Beat map: <display-id = distinct narrative role and action>
 Cross-screen interaction: <action/reaction, exchange, confrontation, pursuit, rescue, dialogue, reveal, or transformation>
 Physical junction: <object or force, source edge, destination edge, direction, width, and invisible gap behavior>
-Artistic lineage: <movement or practice> translated into <staging, palette, shape, perspective, gesture>
-Philosophical premise: <idea> made visible through <specific relation or consequence>
+Artistic lineage: <dominant movement or practice> translated into <staging, palette, shape, perspective, gesture>; <optional supporting lineage and its one precise job>
+Composition engine: <locked viewpoint, spatial rhythm, tempo, scale, and direction of action>
+Optional lens: <narrative, literary, philosophical, humorous, satirical, mythic, or poetic idea made visible through a specific relation or consequence; or none>
 Material grammar: <physical medium, texture, imperfection, and light behavior>
 Shared world: <background plane, horizon, architecture, and lighting continuity>
 Avoid: <generic AI tropes and any non-narrative fallback>
@@ -213,13 +436,13 @@ Reject or rewrite a direction when any answer is `yes`:
 - Is the junction decorative rather than necessary to the interaction?
 - Does any display merely fill space instead of contributing a beat?
 - Would removing the artistic reference leave essentially the same image?
-- Is the philosophy merely named rather than visible in the staging?
+- If a conceptual lens is used, is it merely named rather than visible in the staging?
 - Could the result pass as generic game key art, wallpaper-site fantasy, or a stock AI splash screen?
 - Does spectacle come mainly from cyan glow, particles, fog, impossible mountains, or ornamental micro-detail?
 - Are several incompatible styles being blended without hierarchy?
 - Is every surface digitally smooth, with no medium-specific texture or imperfection?
 
-Before generation, summarize the final direction in two sentences: the first states the story and interaction; the second states the lineage, premise, and medium. If either sentence is vague, return to art direction instead of generating.
+Before generation, summarize the final direction in two sentences: the first states the visible scene and cross-screen interaction; the second states the reality mode, dominant lineage, composition engine, material grammar, and optional lens. If either sentence is vague, return to the unresolved funnel gate instead of generating.
 
 ## Composition rules
 
