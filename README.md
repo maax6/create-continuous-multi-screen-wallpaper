@@ -1,11 +1,18 @@
 # One Image Across Screens
 
-A Codex skill for developing an image from an ordinary verbal description, then creating one culturally grounded continuous scene across two or three displays, including mixed resolutions, portrait screens, unequal physical sizes, bezels, gaps, and vertical offsets.
+Technical production for continuous wallpapers across two or three monitors: physical layout, virtual-canvas geometry, exact-size crops, source-resolution checks and seam verification.
 
-The adaptive creative funnel can move from real to unreal, identify the scene's people, creatures, objects, places, or natural forces, explore quiet, playful, adventurous, documentary, humorous, satirical, dramatic, and other user-defined registers, and narrow a broad artistic atlas into one coherent direction. The production workflow then gives every screen a distinct beat, requires an interaction and a physical junction, builds a measured virtual canvas, generates one composition master, checks source-pixel density, and re-renders individual displays when a direct crop would be too soft.
+The base model handles image creation and the conversation with the user. This skill does not impose a creative questionnaire or image content.
 
+## Workflow
 
-https://github.com/user-attachments/assets/aca8e260-bdc1-4f7f-8e47-68841f347f00
+1. Establish resolutions, orientations, physical sizes, offsets and gaps.
+2. Model the setup in `layout.json` and inspect its guide.
+3. Obtain explicit approval of the complete master image.
+4. Analyze crop resolution, split, and refine insufficient regions if needed.
+5. Verify the spatial preview and deliver one file per display.
+
+Supports unequal pixel densities, portrait displays and offset layouts. Output pixels and physical art-space coordinates are separate. Physical estimates and generative seam limitations must be disclosed.
 
 ## Install
 
@@ -15,77 +22,42 @@ git clone https://github.com/maax6/create-continuous-multi-screen-wallpaper.git 
 python3 -m pip install Pillow
 ```
 
-Restart Codex after installation, then invoke:
+Invoke:
 
 ```text
 $create-continuous-multi-screen-wallpaper
 ```
 
-## What it supports
-
-- Two- and three-display desks
-- Landscape and portrait displays
-- Mixed native resolutions and pixel densities
-- Unequal physical display sizes
-- Vertical offsets, bezels, and physical air gaps
-- Icon-safe and widget-safe quiet zones
-- A plain-language starting point with an adaptive, non-repetitive creative funnel
-- Real, reconstructed, altered, dreamlike, imaginary, speculative, and symbolic scenes
-- People, characters, animals, creatures, objects, machines, architecture, landscapes, and natural forces
-- Quiet, playful, intimate, adventurous, documentary, humorous, absurd, satirical, dramatic, and user-defined registers
-- Diverse historical, vernacular, photographic, performative, craft, popular, and digital art directions
-- A distinct narrative role for every display
-- Cross-screen interaction and a story-bearing physical junction
-- Rejection of merely similar wallpapers or decorative continuity without a shared event
-- Quality analysis before accepting enlarged crops
-- Sequential HD re-rendering that preserves narrative and cross-screen anchor contracts
-
 ## Layout helper
-
-Print the `layout.json` schema:
 
 ```bash
 python3 scripts/wallpaper_layout.py schema
-```
 
-Render a measured layout guide:
-
-```bash
 python3 scripts/wallpaper_layout.py guide \
-  --layout layout.json \
-  --output layout-guide.png
+  --layout layout.json --output layout-guide.png
 ```
 
-Analyze a composition master and estimate enlargement per display:
+After approval of the displayed master:
 
 ```bash
 python3 scripts/wallpaper_layout.py analyze \
-  --layout layout.json \
-  --master master.png
-```
+  --layout layout.json --master master.png
 
-Create draft crops and a spatial preview:
-
-```bash
 python3 scripts/wallpaper_layout.py split \
-  --layout layout.json \
-  --master master.png \
-  --output-dir wallpaper-drafts
-```
+  --layout layout.json --master master.png --output-dir wallpaper-drafts
 
-Assemble final per-display renders into a physical-layout preview:
-
-```bash
 python3 scripts/wallpaper_layout.py preview \
-  --layout layout.json \
-  --input-dir wallpapers-hd \
-  --output spatial-preview-hd.png
+  --layout layout.json --input-dir wallpapers-hd --output spatial-preview-hd.png
 ```
 
-## Requirements
+Use the same `--fit` mode for analysis and splitting. The default is `cover`; `contain` adds padding, and `stretch` changes proportions.
 
-- Python 3.10+
-- Pillow
-- An image-generation capability available to the agent
+The helper's quality recommendations depend on enlargement: up to 1.33×, direct crop subject to inspection; up to 2×, inspect or refine; above 2×, refinement required unless draft quality is explicitly accepted. Exact output dimensions do not imply native detail.
 
-See [SKILL.md](SKILL.md) for the full workflow and quality rules.
+## Requirements and outputs
+
+Python 3.10+ and Pillow. An image-generation/refinement capability is needed only when creating or refining image content; an adequate existing master can be cropped directly.
+
+Deliverables: master, fitted master, per-display PNGs, spatial preview, file-to-screen mapping and actual source/final dimensions. OS wallpaper settings are not changed automatically.
+
+See [SKILL.md](SKILL.md) and the [resolution and seam reference](references/high-resolution-rendering.md).

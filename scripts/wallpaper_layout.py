@@ -155,7 +155,7 @@ def quality_recommendation(max_enlargement: float) -> str:
     if max_enlargement <= 1.33:
         return "direct-crop-detailed-ok"
     if max_enlargement <= 2.0:
-        return "direct-crop-abstract-only-or-hd-rerender"
+        return "inspect-crop-or-hd-rerender"
     return "hd-rerender-required"
 
 

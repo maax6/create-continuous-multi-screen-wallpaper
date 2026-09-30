@@ -1,114 +1,61 @@
-# High-resolution per-screen rendering
+# High-resolution refinement and seam control
 
-Read this reference after the composition master is approved and the quality report shows that one or more crops lack sufficient source pixels.
+Use after master approval and a resolution report showing insufficient source detail. Keep the approved image unchanged in framing and content; this reference governs technical fidelity only.
 
-## Principle
+## Choose the production route
 
-The master is the composition and story contract. Each per-screen HD image is a faithful semantic re-render of one master region, not a new interpretation and not a conventional pixel upscale. The generator should spend its full image budget on that display while preserving the master’s geometry, lighting, palette, narrative beat, interaction, and cross-screen junctions.
+- If the shared master has enough native detail, crop it deterministically.
+- If a full-master refinement can supply enough detail, perform it before slicing and verify that the geometry is preserved.
+- Otherwise, re-render only insufficient screen regions using their exact draft crops. If an output remains below its target resolution, report the final enlargement.
 
-The selected artistic lineage, philosophical premise, material grammar, story sentence, cast, and beat map are also invariants. A re-render that becomes smoother, more spectacular, more game-like, more generically `cinematic`, or narratively independent from its neighboring display has failed even if its geometry is correct.
+Independent generative re-renders cannot guarantee pixel-perfect seams. For tight bezels, prefer a shared master or a mask-capable refinement that preserves a shared boundary corridor. Do not hide a seam mismatch with unreported repositioning or stretching.
 
-Use direct crops when they already contain enough source detail. Re-render only the insufficient screens.
+## Record boundary constraints
 
-## Record a crossing contract
+For each feature already crossing a display boundary, record:
 
-For every object that crosses between displays, record:
+- source and destination screen IDs and edges;
+- intersection positions and visible width as percentages along each edge;
+- direction/tangent and depth order;
+- color, brightness and texture at the boundary;
+- continuation through the measured invisible gap.
 
-- crossing name and visual role;
-- the actor, recipient, and narrative action carried by the crossing;
-- origin display and edge;
-- exit position as a percentage along that edge;
-- destination display and edge;
-- entry position as a percentage along that edge;
-- apparent width as a percentage of each edge;
-- direction or tangent angle;
-- dominant colors, brightness, and depth order;
-- what continues invisibly through the bezel or physical gap.
+Record existing features, not new content requirements. A contour or tonal gradient is as valid a boundary constraint as any other image feature.
 
-Use normalized percentages rather than master pixels in generation prompts. A broad beam exiting at `72%` of a bottom edge and entering at `8%` of a top edge is more robust than a fragile absolute coordinate.
+## Refine sequentially
 
-Prefer one large, simple, story-bearing crossing shape. Keep faces, fingers, text, and other identity-sensitive details away from the crossing corridor. A horizon, palette, atmospheric glow, or repeated motif does not count as the crossing.
+1. Select an anchor screen and refine it using the master and its exact draft crop.
+2. Verify its framing, silhouette, boundary intersections and appearance against the approved master.
+3. Refine each connected screen with the master, its own crop and the accepted neighboring render. When two accepted neighbors constrain an output, include both.
+4. Correct only the receiving region if its boundary drifts. Preserve unrelated regions.
 
-## Render order
+Use direct crops unchanged wherever they already pass the quality check.
 
-1. Choose the anchor display: normally the display containing the crossing’s origin, main subject, or dominant structure.
-2. Re-render it first from the master and its draft crop.
-3. Approve its composition before continuing.
-4. Re-render each connected display sequentially. Supply the master, that display’s draft crop, and the approved neighboring render as separate references with explicit roles.
-5. If a screen connects two neighbors, include both approved neighbors and preserve both anchor contracts.
+## Technical prompt fields
 
-Do not generate connected screens in parallel. Parallel generation removes the opportunity to condition later screens on the approved boundary geometry.
-
-## Prompt scaffold
-
-Adapt this scaffold to each display:
+Pass only the information relevant to the operation:
 
 ```text
-Use case: stylized-concept
-Asset type: high-resolution wallpaper for <display-id>, <output aspect and resolution>
+Target: <display ID>, <output dimensions and aspect ratio>.
+Inputs:
+- full approved master: global appearance and geometry reference;
+- target draft crop: exact output framing;
+- neighboring accepted render(s), if any: boundary reference.
 
-Primary request: Faithfully re-render the <display-id> region of the approved master with newly resolved native detail. This is not a new composition and not a generic upscale.
-
-Input images:
-- Image 1: approved full composition master; global geometry, palette, lighting, and story reference.
-- Image 2: draft crop for <display-id>; framing and object-placement reference.
-- Image 3: approved neighboring wallpaper; boundary-anchor and rendering-fidelity reference.
-
-Cultural direction:
-- Story sentence: <who or what acts, toward whom or what, and what visibly changes>.
-- Beat map: <the narrative role and action on every display>.
-- Cross-screen interaction: <the action/reaction, exchange, confrontation, pursuit, rescue, dialogue, reveal, or transformation>.
-- Physical junction: <the specific story-bearing object, gesture, path, force, shadow, or structure connecting the displays>.
-- Artistic lineage: <movement, period, medium, and its concrete visual rules>.
-- Philosophical premise: <idea expressed through a visible relation or metaphor>.
-- Material grammar: <surface, mark-making, grain, printing, lens, paint, or craft behavior>.
-
-Preserve exactly:
-- the draft crop’s camera, horizon, major silhouettes, object positions, and negative space;
-- the master’s light direction, atmosphere, palette, and depth order;
-- this display's assigned narrative beat, including the same actors, gestures, props, action, and visible consequence;
-- the interaction with the neighboring display; do not turn this crop into a self-contained vignette;
-- the approved lineage, premise, and material imperfections; do not replace them with a generic digital finish;
-- <crossing> carrying <narrative action> and exiting/entering the <edge> at <position%>, width <width%>, angle <angle>, with <color/light description>;
-- requested icon-safe areas.
-
-Add detail only inside the established forms: material texture, fine environment detail, clean edges, and natural micro-contrast. Do not add, remove, relocate, or reinterpret major subjects.
-
-Constraints: one continuous event, not an independent illustration; no text, labels, logos, signatures, watermark, border, duplicated subject, guide shapes, or new crossing elements. No abstract or purely decorative fallback. No stock AI fantasy, game key art, ornamental particles, unsupported cyan glow, excessive volumetric fog, or digitally smooth surfaces unless explicitly required by the approved direction.
+Task: Resolve additional native detail within this crop without changing its
+camera, framing, shapes, feature locations, colors, lighting or depth order.
+Keep all intentionally cropped features cut off at the same edges.
+Preserve <edge>, <intersection percentages>, <width>, <tangent> and
+<boundary appearance> from the supplied references.
+Return only this display's image, without guides or a monitor mockup.
 ```
 
-Describe each input’s role explicitly. Avoid vague phrases such as “make it similar,” “matching wallpaper,” or “upscale this.”
+This is a fidelity specification, not a prescription for image content.
 
-## Boundary strategy
+## Size and verify
 
-For displays separated by a visible physical gap, semantic anchor matching is usually sufficient: the missing space hides small pixel differences. Keep the crossing broad and tolerate only small positional drift.
+Request the target aspect ratio and available detail, then inspect the returned pixel dimensions. Do not infer native resolution from a requested size. If needed, resize once at the end and report the factor.
 
-For touching displays or very thin bezels, independent re-rendering cannot guarantee a pixel-perfect seam. Use one of these routes:
+Save `wallpaper-<safe-display-id>-<width>x<height>.png` and rebuild the spatial preview with `wallpaper_layout.py preview`.
 
-1. Generate a master with enough native resolution to crop directly.
-2. Preserve a narrow shared boundary corridor from the master and refine only the interiors with a mask-capable edit, feathering into the locked corridor.
-3. Design a scene around a broad, narratively meaningful, seam-tolerant carrier such as a train, river, roadway, curtain, wall opening, large cast shadow, smoke mass, carried banner, architectural span, or bold bodily movement whose small texture differences are inconspicuous.
-
-Do not claim exact continuity from two fully independent generative redraws.
-
-## Output sizing
-
-Ask the image generator for the display’s aspect ratio and highest available detail. If it still returns fewer pixels than the native wallpaper resolution, resize only once at the end. A full-frame per-screen render followed by a moderate resize retains substantially more detail than enlarging a small crop extracted from a multi-display master.
-
-Save each approved render with the deterministic filename expected by the preview command:
-
-```text
-wallpaper-<safe-display-id>-<width>x<height>.png
-```
-
-## Final correction loop
-
-Build the HD spatial preview and inspect the crossing at normal size and zoomed out. If a mismatch remains, edit only the receiving display and restate:
-
-- its exact anchor percentages;
-- the neighboring display as an invariant reference;
-- the instruction to keep every unrelated region unchanged.
-
-Stop when the physical preview reads as one action and each individual file retains adequate detail. If exact geometry remains impossible with the available generator, explain the limitation and offer the seam-locked or seam-tolerant route instead of hiding the mismatch.
-
-Before delivery, repeat the narrative removal test on the HD preview: hide each display in turn. If the intended interaction or consequence remains fully understandable without it, the re-render has weakened the distributed scene and must be corrected.
+Inspect both native-detail sharpness and the assembled boundaries. Compare crop intersections, tangent directions, scale, color and brightness at each junction. If exact alignment remains unattainable, state the limitation and offer a shared-master or locked-boundary route; do not claim success from output dimensions alone.

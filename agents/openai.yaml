@@ -1,7 +1,7 @@
 interface:
   display_name: "One Image Across Screens"
-  short_description: "Guide one continuous scene across 2–3 screens"
-  default_prompt: "Use $create-continuous-multi-screen-wallpaper to guide me from a plain-language image idea through a complete creative funnel, then create one continuous wallpaper across my screens."
+  short_description: "Physical layouts, crops, resolution and screen seams"
+  default_prompt: "Use $create-continuous-multi-screen-wallpaper to calculate my display layout and prepare per-screen wallpapers from an approved image."
   icon_small: "assets/icon.svg"
   icon_large: "assets/icon.svg"
 policy:
